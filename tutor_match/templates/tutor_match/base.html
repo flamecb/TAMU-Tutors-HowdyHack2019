@@ -1,0 +1,36 @@
+<!DocType html>
+<html>
+
+<head>
+    {%load static %}
+    <link rel="stylesheet" href="{% static 'global.css' %}">
+    <title>TAMU Tutors</title>
+</head>
+
+<body>
+
+<div class="grid-container1" style="top: 0px;height: 14vh;grid-template-columns: 15vw 70vw 15vw; display: grid;position: fixed;background-color: #fff">  
+    <div class="sLogo">
+        <a href="/"><img src="https://i.imgur.com/6fpsseh.png" style="height:10vh;margin-top:2vh;margin-left:2vh"></a>
+    </div>
+    <div class="bLogo">
+        <img src="https://i.imgur.com/JlcuWKG.jpg" style="height:10vh">
+    </div>
+    <div class="button" style="height:10vh; color: #fff">
+        <p style="margin-top:3vh; font-size: 1.3vw"> <a href="/signup" style="color: #fff; text-decoration: none">
+            Sign Up</a>/<a href="/login" style="color: #fff; text-decoration: none">Log In</a></p>
+    </div>
+</div>  
+
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert"></div>
+    {% endfor %}
+{% endif %}
+{% block content %} {% endblock content %}
+
+
+
+</body>
+</html>

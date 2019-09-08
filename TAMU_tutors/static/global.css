@@ -1,0 +1,132 @@
+*{margin: 0; padding: 0;}
+
+
+
+.grid-container2{
+	margin-top: 7vh;
+	width: 100%;
+	display: grid;
+	grid-template-rows: auto auto 10vh;
+	grid-template-columns:  10vw 40vw 40vw 10vw;
+	gap: 5vw;
+	align-content: middle, space-evenly;
+}
+
+
+.text-box1{
+	margin-top: 4vh;
+}
+
+.body-item1{
+	grid-row: 1;
+	grid-column: 2;
+	height: 20vw;
+	width: 20vw;
+	background-color: #d3d3d3;
+	border-radius: 3vw;
+}
+
+.body-item2{
+	grid-row: 1;
+	grid-column: 3;
+	height: 20vw;
+	width: 20vw;
+	background-color: #d3d3d3;
+	border-radius: 3vw;
+	vertical-align: center;
+}
+
+.body-item3{
+	grid-row:2;
+	grid-column: 2;
+	height: 20vw;
+	width: 20vw;
+	background-color: #d3d3d3; 
+	border-radius: 3vw;
+	vertical-align: center;
+}
+
+.body-item4{
+	grid-row: 2;
+	grid-column: 3;
+	height: 20vw;
+	width: 20vw;
+	background-color: #d3d3d3;
+	border-radius: 3vw;
+}
+
+.sLogo{
+	grid-row: 1;
+	grid-column: 1;
+	max-width: auto;
+	max-height: 5vf;
+	margin: 1vf;
+	background: #fff;
+}
+
+.bLogo{
+	grid-row: 1;
+	grid-column: 2 / 3;
+	height: 5vh;
+	width: auto;
+	align-content: center;
+	margin: 1vh; 
+	background: white;
+	justify-self: center;
+}
+
+.button{
+	margin-top:3vh;
+	background-color: #500000;
+	width:9vw;
+	height: 5vw;
+	text-align: center;
+	cursor: pointer;
+	grid-column: 3;
+	grid-row: 1;
+	border-radius: 1vw;
+}
+
+.buttonred{
+	border-radius: 2px; border-style: solid; border-width: 0px; grid-column: 4; background-color: #500000;
+}
+
+body{
+	background-color: #500000;
+	padding-top: 20vw;
+}
+
+.form-group{
+	width:400px;
+	height: auto;
+	padding: 50px 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 #000;
+	margin: auto;
+	position: relative;
+}
+
+ul.list{
+	list-style-type: none;
+	text-align: center;
+}
+
+ul.list li{
+	width: 250px;
+	margin: 10px;
+}
+
+ul.list li input{
+	width: 250px;
+	text-align: center;
+	padding: 10px 0px;
+	border: none;
+	background-color: #d3d3d3;
+	border-radius: 5px;
+}
+
+ul.list li input[type="button"]{
+	background-color: #500000;
+	color: #fff;
+}

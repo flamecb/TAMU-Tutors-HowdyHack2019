@@ -1,0 +1,17 @@
+
+<html>
+<body>
+  <form method="POST">
+		{% csrf_token %}
+		<fieldset class="form-group">
+			{{ form }}
+		</fieldset>
+		<div class="form-group">
+			<button class="btn btn-outline-info" type="submit">Search</button>
+    </div>
+    <div>
+      {{ template |safe }}
+    </div>
+	</form>
+</body>
+</html>
